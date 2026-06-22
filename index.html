@@ -213,6 +213,12 @@ footer .copy{margin-top:1.5rem;font-size:.72rem;letter-spacing:.1em}
 .lb .nav-a:hover{opacity:1}
 .lb .prev{left:2vw}.lb .next{right:2vw}
 
+/* mobile menu hidden by default on all sizes */
+.mobile-menu{position:fixed;inset:0;background:var(--espresso);z-index:80;display:none;flex-direction:column;align-items:center;justify-content:center;gap:2rem}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:var(--paper);font-family:var(--serif);font-size:1.8rem}
+.mobile-menu .x{position:absolute;top:24px;right:28px;font-size:2rem;color:var(--paper);cursor:pointer}
+
 @media(max-width:900px){
   .menu{display:none}
   .burger{display:flex}
