@@ -191,6 +191,11 @@ form select option{color:#111}
 .f2{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
 .note{font-size:.72rem;color:rgba(246,242,234,.45);margin-top:1rem}
 .thanks{display:none;font-family:var(--serif);font-size:1.4rem;color:var(--bronze-2);padding:1rem 0}
+.vlist{border-top:1px solid var(--line-l)}
+.vitem{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:1.2rem 0;border-bottom:1px solid var(--line-l)}
+.vitem .vk{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,242,234,.72)}
+.vitem .vv{font-family:var(--serif);font-size:1.8rem;color:var(--bronze-2);white-space:nowrap}
+.vnote{margin-top:1.5rem;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:rgba(246,242,234,.5)}
 
 /* footer */
 footer{background:#0e0a07;color:rgba(246,242,234,.6);padding:4rem 0 2.5rem}
@@ -271,7 +276,7 @@ footer .copy{margin-top:1.5rem;font-size:.72rem;letter-spacing:.1em}
         <a href="#interiors">Interiors</a>
         <a href="#residences">Residences</a>
         <a href="#gallery">Gallery</a>
-        <a href="#register" class="navcta">Register Interest</a>
+        <a href="#viewing" class="navcta">Private Viewing</a>
       </nav>
       <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
@@ -286,7 +291,7 @@ footer .copy{margin-top:1.5rem;font-size:.72rem;letter-spacing:.1em}
   <a href="#interiors">Interiors</a>
   <a href="#residences">Residences</a>
   <a href="#gallery">Gallery</a>
-  <a href="#register">Register Interest</a>
+  <a href="#viewing">Private Viewing</a>
 </div>
 
 <!-- HERO -->
@@ -297,7 +302,7 @@ footer .copy{margin-top:1.5rem;font-size:.72rem;letter-spacing:.1em}
     <h1>RIVA</h1>
     <div class="sub">A quieter kind of rare.</div>
     <div class="hero-cta">
-      <a href="#register" class="btn">Register Interest</a>
+      <a href="#viewing" class="btn">Arrange a Viewing</a>
       <a href="#vision" class="btn btn-ghost">Discover</a>
     </div>
   </div>
@@ -471,7 +476,7 @@ footer .copy{margin-top:1.5rem;font-size:.72rem;letter-spacing:.1em}
             <li><span>Bedrooms</span><span>5 + Guest Suite</span></li>
             <li><span>Also</span><span>Study · Rooftop Lounge</span></li>
             <li><span>Built area (approx)</span><span>5,500 to 6,100 sq ft</span></li>
-            <li><span>Price</span><span>On Request</span></li>
+            <li><span>Price</span><span>AED 35M</span></li>
           </ul>
         </div>
       </div>
@@ -486,7 +491,7 @@ footer .copy{margin-top:1.5rem;font-size:.72rem;letter-spacing:.1em}
             <li><span>Bedrooms</span><span>3 + Guest Bedroom</span></li>
             <li><span>Plot (approx)</span><span>5,029 sq ft</span></li>
             <li><span>Built area (approx)</span><span>4,175 sq ft</span></li>
-            <li><span>Price</span><span>On Request</span></li>
+            <li><span>Price</span><span>From AED 25M</span></li>
           </ul>
         </div>
       </div>
@@ -550,46 +555,27 @@ footer .copy{margin-top:1.5rem;font-size:.72rem;letter-spacing:.1em}
         <p>One signature 185 residence and seventeen Collection villas. That is the entire release. When they are gone, there is no second phase.</p></details>
       <details><summary>Are they freehold and open to all nationalities?<span class="pm">+</span></summary>
         <p>Yes. Sobha Hartland is a freehold community, open to buyers of all nationalities.</p></details>
-      <details><summary>What is the price and availability?<span class="pm">+</span></summary>
-        <p>Pricing and current availability are shared on registration. Leave your details and our team will be in touch.</p></details>
+      <details><summary>What are the prices?<span class="pm">+</span></summary>
+        <p>The Collection villas start at AED 25M. The 185 signature residence is AED 35M. Each is offered by private appointment; to arrange a viewing, please contact your preferred broker.</p></details>
     </div>
   </div>
 </section>
 
-<!-- REGISTER -->
-<section class="sec reg" id="register">
+<!-- PRIVATE VIEWING -->
+<section class="sec reg" id="viewing">
   <div class="wrap">
     <div class="row">
       <div class="reveal">
-        <div class="eyebrow sec-tag">Register Your Interest</div>
-        <h2>Finished. Rare. Ready when you are.</h2>
-        <p class="lead">There is one 185, and there are seventeen Collection villas. When you are ready to see it, we are ready to show you.</p>
-        <div class="contactline">
-          <div><span>Developer</span>Palm &amp; Peak</div>
-          <div><span>Email</span>sales@palmandpeak.example</div>
-          <div><span>Phone</span>+971 00 000 0000</div>
-        </div>
+        <div class="eyebrow sec-tag">By Private Appointment</div>
+        <h2>Arrange a private viewing.</h2>
+        <p class="lead">RIVA is released to a small circle of buyers, by appointment only. To walk the residences in person, arrange a viewing through your preferred broker.</p>
       </div>
       <div class="reveal d2">
-        <form id="regform">
-          <div class="f2">
-            <div class="f"><label>First Name</label><input required placeholder="First name" /></div>
-            <div class="f"><label>Last Name</label><input required placeholder="Last name" /></div>
-          </div>
-          <div class="f2">
-            <div class="f"><label>Email</label><input type="email" required placeholder="you@email.com" /></div>
-            <div class="f"><label>Phone</label><input required placeholder="+971" /></div>
-          </div>
-          <div class="f2">
-            <div class="f"><label>Residence of Interest</label>
-              <select><option>The 185 (Signature)</option><option>The Collection</option><option>Either</option></select></div>
-            <div class="f"><label>Budget</label>
-              <select><option>On request</option><option>AED 15M to 25M</option><option>AED 25M to 40M</option><option>AED 40M +</option></select></div>
-          </div>
-          <button class="btn" type="submit" style="margin-top:.6rem">Submit Enquiry</button>
-          <div class="thanks" id="thanks">Thank you. Our team will be in touch shortly.</div>
-          <p class="note">By submitting, you agree to be contacted about this release. This form is a demonstration and is not yet connected to a live inbox.</p>
-        </form>
+        <div class="vlist">
+          <div class="vitem"><span class="vk">The 185 · Signature Villa</span><span class="vv">AED 35M</span></div>
+          <div class="vitem"><span class="vk">The Collection · Private Villas</span><span class="vv">From AED 25M</span></div>
+        </div>
+        <p class="vnote">Viewings are arranged exclusively through your preferred broker</p>
       </div>
     </div>
   </div>
@@ -601,11 +587,11 @@ footer .copy{margin-top:1.5rem;font-size:.72rem;letter-spacing:.1em}
       <div class="brand" style="font-family:var(--serif);font-size:1.6rem;letter-spacing:.5em">RIVA</div>
       <div class="fmenu">
         <a href="#vision">Vision</a><a href="#location">Location</a><a href="#architecture">Architecture</a>
-        <a href="#residences">Residences</a><a href="#gallery">Gallery</a><a href="#register">Register</a>
+        <a href="#residences">Residences</a><a href="#gallery">Gallery</a><a href="#viewing">Viewing</a>
       </div>
     </div>
-    <p class="disc">RIVA is a working project name (placeholder). Private villas at Sobha Hartland, Dubai. Computer-generated images are artist's impressions and are indicative only. Stated areas and bedroom counts are approximate and subject to final confirmation. This material does not constitute an offer or contract. A development marketed by Palm &amp; Peak.</p>
-    <div class="copy">© 2026 Palm &amp; Peak. All rights reserved.</div>
+    <p class="disc">Private villas at Sobha Hartland, Dubai. Computer-generated images are artist's impressions and indicative only. Stated areas, prices, and configurations are approximate and subject to change. This material does not constitute an offer or contract.</p>
+    <div class="copy">© 2026 RIVA. All rights reserved.</div>
   </div>
 </footer>
 
@@ -640,8 +626,7 @@ document.getElementById('lbnext').onclick=(e)=>{e.stopPropagation();open(idx+1);
 document.getElementById('lbprev').onclick=(e)=>{e.stopPropagation();open(idx-1);};
 lb.onclick=(e)=>{if(e.target===lb)lb.classList.remove('open');};
 addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowRight')open(idx+1);if(e.key==='ArrowLeft')open(idx-1);});
-// form
-document.getElementById('regform').onsubmit=(e)=>{e.preventDefault();document.getElementById('thanks').style.display='block';e.target.querySelector('button').style.display='none';};
+// no contact form on this landing
 </script>
 </body>
 </html>
