@@ -109,6 +109,16 @@ header.scrolled .burger span{background:var(--ink)}
 .proxlist li span:first-child{color:var(--ink)}
 .proxlist li span:last-child{color:var(--bronze);font-family:var(--sans);font-size:.86rem;letter-spacing:.03em;white-space:nowrap}
 
+/* the street / collection */
+.streetmap{width:100%;margin-top:2.5rem;border:1px solid var(--line)}
+.street .grid2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:end}
+.names{list-style:none;display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem 1.4rem;margin-top:2.4rem}
+.names li{display:flex;align-items:baseline;gap:.55rem;padding:.6rem 0;border-top:1px solid var(--line)}
+.names .nl{font-family:var(--serif);font-style:italic;color:var(--bronze);font-size:1.08rem;min-width:1.05em}
+.names .nn{font-size:.96rem;color:var(--ink)}
+@media(max-width:1000px){.names{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:680px){.names{grid-template-columns:repeat(2,1fr)}.street .grid2{grid-template-columns:1fr}}
+
 /* architecture (dark full bleed) */
 .arch{position:relative;background:var(--espresso);color:var(--paper);overflow:hidden}
 .arch-img{position:relative;height:78vh;min-height:480px;background:url('ext-185-03.jpg') center/cover fixed no-repeat}
@@ -272,6 +282,7 @@ footer .copy{margin-top:1.5rem;font-size:.72rem;letter-spacing:.1em}
       <nav class="menu">
         <a href="#vision">The Vision</a>
         <a href="#location">Location</a>
+        <a href="#collection">The Collection</a>
         <a href="#architecture">Architecture</a>
         <a href="#interiors">Interiors</a>
         <a href="#residences">Residences</a>
@@ -287,6 +298,7 @@ footer .copy{margin-top:1.5rem;font-size:.72rem;letter-spacing:.1em}
   <span class="x" id="mclose">&times;</span>
   <a href="#vision">The Vision</a>
   <a href="#location">Location</a>
+  <a href="#collection">The Collection</a>
   <a href="#architecture">Architecture</a>
   <a href="#interiors">Interiors</a>
   <a href="#residences">Residences</a>
@@ -389,7 +401,42 @@ footer .copy{margin-top:1.5rem;font-size:.72rem;letter-spacing:.1em}
         </ul>
       </div>
     </div>
-    <div class="reveal d2"><img class="aerial" src="aerial.jpg" alt="Aerial of Sobha Hartland, Meydan and Ras Al Khor" /></div>
+    <div class="reveal d2"><img class="aerial" src="dubai_aerial.jpg" alt="Sobha Hartland in the heart of Dubai, minutes from Downtown, Ras Al Khor and the coast" /></div>
+  </div>
+</section>
+
+<!-- THE COLLECTION / STREET -->
+<section class="sec street" id="collection">
+  <div class="wrap">
+    <div class="grid2">
+      <div class="reveal">
+        <div class="eyebrow sec-tag">The Collection</div>
+        <h2>Seventeen villas, A to Q.</h2>
+      </div>
+      <div class="reveal d2">
+        <p class="lead measure">Thirteen villas line a single landscaped street, with four more at the entrance. Each carries its own name, in turn from A to Q, a quiet family drawn from light, air and the Mediterranean. AVRA Prima, the signature villa, stands a short distance away.</p>
+      </div>
+    </div>
+    <div class="reveal d2"><img class="streetmap" src="street.jpg" alt="Site plan of the AVRA Collection, seventeen villas lettered A to Q in Sobha Hartland" /></div>
+    <ul class="names reveal d2">
+      <li><span class="nl">A</span><span class="nn">Alba</span></li>
+      <li><span class="nl">B</span><span class="nn">Brisa</span></li>
+      <li><span class="nl">C</span><span class="nn">Cala</span></li>
+      <li><span class="nl">D</span><span class="nn">Duna</span></li>
+      <li><span class="nl">E</span><span class="nn">Elia</span></li>
+      <li><span class="nl">F</span><span class="nn">Faro</span></li>
+      <li><span class="nl">G</span><span class="nn">Gaia</span></li>
+      <li><span class="nl">H</span><span class="nn">Halo</span></li>
+      <li><span class="nl">I</span><span class="nn">Isla</span></li>
+      <li><span class="nl">J</span><span class="nn">Jara</span></li>
+      <li><span class="nl">K</span><span class="nn">Kaia</span></li>
+      <li><span class="nl">L</span><span class="nn">Luma</span></li>
+      <li><span class="nl">M</span><span class="nn">Marea</span></li>
+      <li><span class="nl">N</span><span class="nn">Noor</span></li>
+      <li><span class="nl">O</span><span class="nn">Onda</span></li>
+      <li><span class="nl">P</span><span class="nn">Perla</span></li>
+      <li><span class="nl">Q</span><span class="nn">Quinta</span></li>
+    </ul>
   </div>
 </section>
 
